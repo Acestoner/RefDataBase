@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"   />
+  <link rel="stylesheet" href="styles.css">
+  <title>REF Data Base</title>
+</head>
+<body>
+
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="hero-container">
+          <h1 class="title">Formulario de Referidos</h1>
+          <img src="Copia de Logo-Gris-Platinum-RGB-Globo.png" class="logo-img" >
+        </div>
+      </div>
+    </section>
+    <form class="box-settings" name="randomGenerator">
+      <input type="button"   class="ref-btn"   value="Generar No. de Referido" 
+      onclick="generateRandom();">
+      <br><br>
+      <h4  id="randomchar" type="number" class="randomchar" ></h4>
+    </form>
+
+    <form id="form" class=" container " method="POST">
+      
+
+      <div class="field">
+        <label class="label">Nombre</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Nombre y Apellido"
+            name="Nombre"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">No. cel</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="# cel"
+            name="Celular"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">No. Referido</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="# ref"
+            name="Referido"
+          />
+        </div>
+      </div>
+
+      
+      <div class="field">
+        <label class="label">Forma de Contacto</label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="Contacto" value="Whatsapp" /> Whatsapp
+          </label>
+          <label class="radio">
+            <input type="radio" name="Contacto" value="LLamada" /> LLamada
+          </label>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button  type="submit" id="submit-button">
+            Guardar
+          </button>
+        </div>
+        
+      </div>
+    </form>
+    <div class="sent-notice"
+      id="message">
+    </div>
+
+    <script src="scipt.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+   
+
